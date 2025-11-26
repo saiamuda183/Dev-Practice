@@ -1,0 +1,50 @@
+{
+  "name": "Test_Extensions_HealthChecker",
+  "label": "Health Checker",
+  "description": "Widget to evaluate health based on sugar and BPM input",
+  "organization": "Test",
+  "version": "1.0.0",
+  "library": "Extensions",
+  "allowedApplications": [],
+  "componentKey": "Test_Extensions_HealthChecker",
+  "type": "Widget",
+  "subtype": [
+    "PAGE",
+    "CASE"
+  ],
+  "icon": "OneColumnPage.svg",
+  "properties": [
+    {
+      "name": "sugar",
+      "label": "Body Sugar",
+      "format": "TEXT"
+    },
+    {
+      "name": "bpm",
+      "label": "Heart Beat (BPM)",
+      "format": "TEXT"
+    },
+    {
+      "name": "dataPage",
+      "label": "Reference Data Page",
+      "format": "TEXT",
+      "defaultValue": "D_VitalsReference"
+    },
+    {
+      "label": "Conditions",
+      "format": "GROUP",
+      "properties": [
+        {
+          "name": "visibility",
+          "label": "Visibility",
+          "format": "VISIBILITY"
+        }
+      ]
+    }
+  ],
+  "defaultConfig": {
+    "sugar": "",
+    "bpm": "",
+    "dataPage": "D_VitalsReference"
+  }
+}

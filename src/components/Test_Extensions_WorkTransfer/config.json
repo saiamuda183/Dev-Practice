@@ -1,0 +1,43 @@
+{
+  "name": "Test_Extensions_WorkTransfer",
+  "label": "Work Transfer",
+  "description": "Transfer the work items",
+  "organization": "Test",
+  "version": "1.0.0",
+  "library": "Extensions",
+  "allowedApplications": [],
+  "componentKey": "Test_Extensions_WorkTransfer",
+  "type": "Widget",
+  "subtype": [
+    "PAGE",
+    "CASE"
+  ],
+  "icon": "OneColumnPage.svg",
+  "properties": [
+    {
+      "name": "title",
+      "label": "Label value",
+      "format": "TEXT"
+    },
+    {
+      "label": "Conditions",
+      "format": "GROUP",
+      "properties": [
+        {
+          "name": "visibility",
+          "label": "Visibility",
+          "format": "VISIBILITY"
+        }
+      ]
+    },
+    {
+      "name": "dataPageName",
+      "label": "Data Page Name",
+      "format": "TEXT",
+      "defaultValue": "D_WorkBasket"
+    }
+  ],
+  "defaultConfig": {
+    "dataPageName": "D_WorkBasket"
+  }
+}

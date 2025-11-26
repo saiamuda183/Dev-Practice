@@ -1,0 +1,1 @@
+{"version":3,"file":"VitalsForm.d.ts","sourceRoot":"","sources":["../../../src/components/Test_Extensions_HealthChecker/VitalsForm.tsx"],"names":[],"mappings":"AAEA,KAAK,eAAe,GAAG;IACrB,QAAQ,EAAE,CAAC,MAAM,EAAE;QAAE,KAAK,EAAE,MAAM,CAAC;QAAC,GAAG,EAAE,MAAM,CAAA;KAAE,KAAK,IAAI,CAAC;CAC5D,CAAC;AAEF,QAAA,MAAM,UAAU,iBAAkB,eAAe,4CA2ChD,CAAC;AAEF,eAAe,UAAU,CAAC"}

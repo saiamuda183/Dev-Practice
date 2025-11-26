@@ -1,0 +1,126 @@
+{
+  "name": "Test_Extensions_SliderBar",
+  "label": "Slider Bar",
+  "description": "",
+  "organization": "Test",
+  "version": "1.0.0",
+  "library": "Extensions",
+  "allowedApplications": [],
+  "componentKey": "Test_Extensions_SliderBar",
+  "type": "Field",
+  "subtype": "Integer",
+  "properties": [
+    {
+      "name": "label",
+      "label": "Field label",
+      "format": "TEXT",
+      "required": true
+    },
+    {
+      "name": "readOnly",
+      "label": "Read-only",
+      "format": "READONLY"
+    },
+    {
+      "label": "Slider Settings",
+      "format": "GROUP",
+      "properties": [
+        {
+          "name": "min",
+          "label": "Minimum value",
+          "format": "NUMBER",
+          "defaultValue": 0,
+          "required": true
+        },
+        {
+          "name": "max",
+          "label": "Maximum value",
+          "format": "NUMBER",
+          "defaultValue": 100,
+          "required": true
+        },
+        {
+          "name": "step",
+          "label": "Step increment",
+          "format": "NUMBER",
+          "defaultValue": 1,
+          "min": 1
+        },
+        {
+          "name": "defaultValue",
+          "label": "Default value",
+          "format": "NUMBER"
+        },
+        {
+          "name": "showInput",
+          "label": "Show numeric input",
+          "format": "BOOLEAN",
+          "defaultValue": true
+        },
+        {
+          "name": "showTicks",
+          "label": "Show ticks",
+          "format": "BOOLEAN",
+          "defaultValue": true
+        },
+        {
+          "name": "displayMode",
+          "label": "Display mode",
+          "format": "TEXT",
+          "defaultValue": "EDIT"
+        },
+        {
+          "name": "displayAs",
+          "label": "Display as",
+          "format": "TEXT",
+          "defaultValue": "slider"
+        },
+        {
+          "name": "validatemessage",
+          "label": "Validation message",
+          "format": "TEXT",
+          "defaultValue": ""
+        },
+        {
+          "name": "status",
+          "label": "Status",
+          "format": "TEXT",
+          "defaultValue": "success"
+        },
+        {
+          "name": "helperText",
+          "label": "Helper text",
+          "format": "TEXT",
+          "defaultValue": "Adjust the slider"
+        }
+      ]
+    },
+    {
+      "label": "Conditions",
+      "format": "GROUP",
+      "properties": [
+        {
+          "name": "required",
+          "label": "Required",
+          "format": "REQUIRED"
+        },
+        {
+          "name": "disabled",
+          "label": "Disabled",
+          "format": "DISABLED"
+        },
+        {
+          "name": "visibility",
+          "label": "Visibility",
+          "format": "VISIBILITY"
+        }
+      ]
+    }
+  ],
+  "defaultConfig": {
+    "label": "@L $this.label",
+    "detailFVLItem": true,
+    "isFormWidth": false,
+    "isContainerWidth": false
+  }
+}
